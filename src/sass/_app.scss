@@ -1,0 +1,140 @@
+.main {
+    background-color: rgba(229, 233, 239, 1);
+}
+
+.header-parent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+.menu-container {
+    padding: 15px;
+    background: black;
+}
+
+.logo-container {
+    padding-right: 3%;
+    padding-top: 30px;
+}
+
+.container {
+    max-width: 1500px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    min-height: 100vh;
+}
+
+.grid {
+    margin: 0 4%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid-item {
+    display: block;
+    background-color: gold;
+    padding-top: 40px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 175px;
+    color: #ffffff;
+    position: relative;
+}
+
+.grid-item-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.grid-image-dark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+}
+
+.grid-item h3 {
+    margin-bottom: 12px;
+}
+
+.filters {
+    margin-left: 12%;
+    margin-bottom: 70px;
+
+    h2 {
+        margin-bottom: 50px;
+    }
+}
+
+.mobile-menu-toggle {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+
+    @include media($bp-tablet) {
+        display: none;
+    }
+}
+
+.chevron-arrow {
+    margin-left: 5px;
+    transform: rotate(0deg);
+}
+
+.filters-ul {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: flex-start;
+    color: #bbbbbb;
+    overflow: hidden;
+    height: 0;
+    transition: height 0.3s ease;
+
+    @include media($bp-laptop) {
+        display: flex;
+        width: 40%;
+    }
+
+    @include media($bp-tablet) {
+        flex-direction: row;
+        justify-content: space-between;
+        height: auto;
+    }
+}
+
+.visible {
+    height: 220px;
+
+    @include media($bp-tablet) {
+        height: auto;
+    }
+}
+
+.filter-button {
+    margin: 5px 0;
+    padding: 10px 0;
+    position: relative;
+    display: inline-block;
+}
+
+.-active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    border-radius: 3px;
+    background: rgba(74, 197, 233, 1);
+}
+
+

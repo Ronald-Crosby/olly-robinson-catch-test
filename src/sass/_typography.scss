@@ -1,0 +1,68 @@
+@font-face {
+font-family: 'Omnes';
+font-style: normal;
+font-weight: 400;
+src: local('Omnes Regular'), url('../../fonts/omnes-regular-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes';
+font-style: normal;
+font-weight: 200;
+src: local('Omnes ExtraLight'), url('../../fonts/omnes_extralight-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes';
+font-style: normal;
+font-weight: 300;
+src: local('Omnes Light'), url('../../fonts/omnes_light-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes';
+font-style: normal;
+font-weight: 500;
+src: local('Omnes Medium'), url('../../fonts/omnes_medium-webfont.woff') format('woff');
+}
+
+
+@font-face {
+font-family: 'Omnes';
+font-style: normal;
+font-weight: 600;
+src: local('Omnes Semibold'), url('../../fonts/omnes-semibold-webfont.woff') format('woff');
+}
+
+body {
+    font-family: 'Omnes', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.alpha {
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 1;
+    letter-spacing: 5px;
+}
+
+.bravo {
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.25;
+}
+
+.button {
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.-active {
+    color: #000000;
+}
