@@ -11,6 +11,7 @@
     - navigate to local folder in command line
     - run npm install
     - open index.html file in your browser
+    - Gulp 3 has issues running on Node V12 so try changing to Node V10 if you run into trouble running Gulp in the command line.
 
 - A quick summary of your approach
 
